@@ -1,10 +1,13 @@
 # PaperClipV3
-This is the 3rd iteration of the Python script to monitor the contents of a user's clipboard.
+PaperClipV3 is the third iteration of a Python-based clipboard monitoring tool.
 
-In this iteration, I've added the functionality for the user to be able to clear the contents of the clipboard. This also clears the contents of the GUI. The data that was captured and saved to the log file remains intact.
+This version introduces new functionality that allows the user to clear the clipboard contents directly from the GUI. When cleared, both the system clipboard and the GUI display reset. Any previously captured clipboard data that was written to the log file remains unchanged.
+Executable Build Instructions
 
-To make this script executable, ensure that PyInstaller is installed in the Python environment. Then, run the following command:
+To package this script into a standalone executable, ensure that PyInstaller is installed in your Python environment. Then run:
 
 pyinstaller --noconsole --onefile PaperClip3.py
 
-This command will create a single executable file and will hide the console window. If you need the console window for debugging purposes, remove the "--noconsole" portion of the command. 
+This command generates a single .exe file while suppressing the console window for a cleaner user experience.
+
+If you prefer to keep the console visible for debugging, remove the --noconsole option.
